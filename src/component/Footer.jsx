@@ -10,7 +10,7 @@ const footer = () => {
       {isOpen ? (
         <div className="btnn" id="hide">
           <h2>
-            Our hours are from 12:00 to 22:00. Come visit us or order online
+            We are open from 12:00 to 22:00. Come visit us or order online.
           </h2>
           <button className="btn">
             <div className="order"></div>Order

@@ -175,6 +175,7 @@ body {
   cursor: pointer;
   transition: all 0.2s;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .btn:hover {
