@@ -1,11 +1,26 @@
 import React from "react";
-import Button from "./Button";
 
 const footer = () => {
+  const currentTime = new Date();
+  const currentHour = currentTime.getHours();
+  const isOpen = currentHour >= 12 && currentHour < 22;
+
   return (
-    <div className="footer">
-      We Open from 12:00 to 22:00. Come visit us or order online.
-      <Button />
+    <div>
+      {isOpen ? (
+        <div className="btnn" id="hide">
+          <h2>
+            Our hours are from 12:00 to 22:00. Come visit us or order online
+          </h2>
+          <button className="btn">
+            <div className="order"></div>Order
+          </button>
+        </div>
+      ) : (
+        <h2>
+          We're currently closed. Please visit us during our operating hours.
+        </h2>
+      )}
     </div>
   );
 };
